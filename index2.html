@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Tiny5' rel='stylesheet'>
+    <script src="/testing.js"></script>
+</head>
+<body>
+    <h1 class="title">Loot Table:</h1>
+    <br>
+    <!-- this container holds the buttons-->
+    <div class="button-container">
+        <div class="button-grid1">
+            <button onclick="document.getElementById('Platinum').innerHTML = getRndInteger(0,5)">Platinum</button>
+            <button onclick="document.getElementById('gold').innerHTML = getRndInteger(0,30)">Gold</button>
+            <button onclick="document.getElementById('electrum').innerHTML = getRndInteger(0,50)">Electrum</button>
+            <button onclick="document.getElementById('silver').innerHTML = getRndInteger(0,100)">Silver</button>
+            <button onclick="document.getElementById('copper').innerHTML = getRndInteger(0,300)">Copper</button>
+            <button onclick="document.getElementById('cost-roll').innerHTML = getRndInteger(0,300)">Merchant</button>
+    </div>
+        <div class="button-grid2">
+            <button onclick="document.getElementById('trinket').innerHTML = getRndInteger(1,50)">Random Loot - Trinket</button>
+            <button onclick="document.getElementById('random-a').innerHTML = getRndInteger(1,9)">Random Loot - TABLE A</button>
+            <button onclick="document.getElementById('random-b').innerHTML = getRndInteger(1,36)">Random Loot - TABLE B</button>
+            <button onclick="document.getElementById('random-c').innerHTML = getRndInteger(1,36)">Random Loot - TABLE C</button>
+            <button onclick="document.getElementById('random-d').innerHTML = getRndInteger(1,36)">Random Loot - TABLE D</button>
+            <button onclick="document.getElementById('random-e').innerHTML = getRndInteger(1,36)">Random Loot - TABLE E</button>
+            <button onclick="document.getElementById('random-f').innerHTML = getRndInteger(1,36)">Random Loot - TABLE F</button>
+            <button onclick="document.getElementById('random-g').innerHTML = getRndInteger(1,36)">Random Loot - TABLE G</button>
+        </div>
+    </div>
+
+    <!-- Return values after button is pressed-->
+    <div class="return-value-container">
+        <div class="div-box">
+            <h1>PLATINUM</h1><p id="Platinum"></p>
+        </div>
+        <div class=div-box>
+            <h1>GOLD</h1><p id="gold"></p>
+        </div>
+        <div class=div-box>
+            <h1>ELECTRUM</h1><p id="electrum"></p>
+        </div>
+        <div class=div-box>
+            <h1>SILVER</h1><p id="silver"></p>
+        </div>
+        <div class=div-box>
+            <h1>COPPER</h1><p id="copper"></p>
+        </div>
+        <div class=div-box>
+            <h1>RANDOM LOOT</h1><p id="cost-roll"></p>
+        </div>
+    </div>
+    <div class="table-div">
+        <table>
+            <tr>
+                <th colspan="2">Trinkets</th>
+                <th colspan="2">Table A</th>
+                <th colspan="2">Table B</th>
+                <th colspan="2">Table C</th>
+                <th colspan="2">Table D</th>
+                <th colspan="2">Table E</th>
+                <th colspan="2">Table F</th>
+                <th colspan="2">Table G</th>
+            </tr>
+            <tr>
+                <td class="roll" colspan="2"><p id="trinket"></p></td>
+                <td class="roll" colspan="2"><p id="random-a"></p></td>
+                <td class="roll" colspan="2"><p id="random-b"></p></td>
+                <td class="roll" colspan="2"><p id="random-c"></p></td>
+                <td class="roll" colspan="2"><p id="random-d"></p></td>
+                <td class="roll" colspan="2"><p id="random-e"></p></td>
+                <td class="roll" colspan="2"><p id="random-f"></p></td>
+                <td class="roll" colspan="2"><p id="random-g"></p></td>
+            </tr>
+            <tr>
+                <td class="numbers">1</td> <!-- Table Trinket -->
+                    <td class="items">A mummified goblin hand</td>
+                <td class="numbers">1</td> <!-- Table A -->
+                    <td class="items">Healing Potion</td>
+                <td class="numbers">1</td> <!-- Table B -->
+                    <td class="items">Potion of Greater Healing</td>
+                <td class="numbers">1</td> <!-- Table C -->
+                    <td class="items">Potion of Superior Healing</td>
+                <td class="numbers">1</td> <!-- Table D -->
+                    <td class="items"></td>
+                <td class="numbers">1</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">1</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">1</td> <!-- Table G -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">2</td> <!-- Table Trinket -->
+                    <td class="items">A piece of crystal that faintly glows in the moonlight</td>
+                <td class="numbers">2</td> <!-- Table A -->
+                    <td class="items">Spell Scroll (Cantrip)</td>
+                <td class="numbers">2</td> <!-- Table B -->
+                    <td class="items">Potion of Fire Breath</td>
+                <td class="numbers">2</td> <!-- Table C -->
+                    <td class="items">Spell Scroll (4th Level)</td>
+                <td class="numbers">2</td> <!-- Table D -->
+                    <td class="items"></td>
+                <td class="numbers">2</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">2</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">2</td> <!-- Table G -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">3</td> <!-- Table Trinket -->
+                    <td class="items">A gold coin minted in an unknown land</td>
+                <td class="numbers">3</td> <!-- Table A -->
+                    <td class="items">Potion of Climbling</td>
+                <td class="numbers">3</td> <!-- Table B -->
+                    <td class="items">Potion of Resistance</td>
+                <td class="numbers">3</td> <!-- Table C -->
+                    <td class="items">2 Ammunition</td>
+                <td class="numbers">3</td> <!-- Table D -->
+                    <td class="items"></td>
+                <td class="numbers">3</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">3</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">3</td> <!-- Table G -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">4</td> <!-- Table Trinket -->
+                    <td class="items">A diary written in a language you don't know</td>
+                <td class="numbers">4</td> <!-- Table B -->
+                    <td class="items">Spell Scroll (1st level)</td>
+                <td class="numbers">4</td> <!-- Table C -->
+                    <td class="items">1 Ammunition</td>
+                <td class="numbers">4</td> <!-- Table D -->
+                    <td class="items">Potion of Clairvoyance</td>
+                <td class="numbers">4</td> <!-- Table E -->
+                    <td class="items"></td> 
+                <td class="numbers">4</td> <!-- Table F -->
+                    <td class="items"></td> 
+                <td class="numbers">4</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">4</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">5</td> <!-- Table Trinket -->
+                    <td class="items">A brass ring that never tarnishes</td>
+                <td class="numbers">5</td> <!-- Table B -->
+                    <td class="items">Spell Scroll (2st level)</td>
+                <td class="numbers">5</td> <!-- Table C -->
+                    <td class="items">Potion of Animal Friendship</td>
+                <td class="numbers">5</td> <!-- Table D -->
+                    <td class="items">Potion of Diminution</td>
+                <td class="numbers">5</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">5</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">5</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">5</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">6</td> <!-- Table Trinket -->
+                    <td class="items">An old chess piece made from glass</td>
+                <td class="numbers">6</td> <!-- Table B -->
+                    <td class="items">Potion of Greater Healing</td>
+                <td class="numbers">6</td> <!-- Table C -->
+                    <td class="items">Potion of Hill Giant Strength</td>
+                <td class="numbers">6</td> <!-- Table D -->
+                    <td class="items">Potion of Gaseous Form</td>
+                <td class="numbers">6</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">6</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">6</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">6</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">7</td> <!-- Table Trinket-->
+                    <td class="items">A pair of knucklebone dice, each with a skull symbol on the side that would normally show six pips</td>
+                <td class="numbers">7</td> <!-- Table B -->
+                    <td class="items">Bag of Holding</td>
+                <td class="numbers">7</td> <!-- Table C -->
+                    <td class="items">Potion of Growth</td>
+                <td class="numbers">7</td> <!-- Table D -->
+                    <td class="items">Potion of Frost Giant Strenght</td>
+                <td class="numbers">7</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">7</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">7</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">7</td> <!-- Table H -->
+                    <td class="items"></td>
+
+            </tr>
+            <tr>
+                <td class="numbers">8</td> <!-- Table Trinket -->
+                    <td class="items">A small idol depicting a nightmarish creature that gives you unsettling dreams when you sleep near it</td>
+                <td class="numbers">8</td> <!-- Table B -->
+                    <td class="items">Driftglobe</td>
+                <td class="numbers">8</td> <!-- Table C -->
+                    <td class="items">Potion of Water Breathing</td>
+                <td class="numbers">8</td> <!-- Table D -->
+                    <td class="items">Potion of Stone Strength</td>
+                <td class="numbers">8</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">8</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">8</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">8</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">9</td> <!-- Table Trinket -->
+                    <td class="items">A rope necklace from which dangles four mummified elf fingers</td>
+                <td class="numbers">9</td> <!-- Table B -->
+                    <td class="items"></td>
+                <td class="numbers">9</td> <!-- Table C -->
+                    <td class="items">Spell Scroll (2nd Level)</td>
+                <td class="numbers">9</td> <!-- Table D -->
+                    <td class="items">Potion of Invulnerability</td>
+                <td class="numbers">9</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">9</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">9</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">9</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">10</td> <!-- Table Trinket -->
+                    <td class="items">The deed for a parcel of land in a realm unknown to you</td>
+                <td class="numbers">10</td> <!-- Table B -->
+                    <td class="items"></td>
+                <td class="numbers">10</td> <!-- Table C -->
+                    <td class="items">Spell Scroll (3rd Level)</td>
+                <td class="numbers">10</td> <!-- Table D -->
+                    <td class="items">Potion of Mind Reading</td>
+                <td class="numbers">10</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">10</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">10</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">10</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">11</td> <!-- Table Trinket -->
+                    <td class="items">A 1-ounce block made from an unknown material</td>
+                <td class="numbers">11</td> <!-- Table B -->
+                    <td class="items"></td>
+                <td class="numbers">11</td> <!-- Table C -->
+                    <td class="items">Bag of Holding</td>
+                <td class="numbers">11</td> <!-- Table D -->
+                    <td class="items">Potion of Heroism</td>
+                <td class="numbers">11</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">11</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">11</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">11</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">12</td> <!-- Table Trinket -->
+                    <td class="items">A small cloth doll skewered with needles</td>
+                <td class="numbers">12</td> <!-- Table B -->
+                    <td class="items"></td>
+                <td class="numbers">12</td> <!-- Table C -->
+                    <td class="items">Keoghtom's Ointment</td>
+                <td class="numbers">12</td> <!-- Table D -->
+                    <td class="items">Spell Scroll (5th Level)</td>
+                <td class="numbers">12</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">12</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">12</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">12</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">13</td> <!-- Table Trinket -->
+                    <td class="items">A tooth from an unknown beast</td>
+                <td class="numbers">13</td> <!-- Table B -->
+                    <td class="items"></td>
+                <td class="numbers">13</td> <!-- Table C -->
+                    <td class="items">Oil of Slipperiness</td>
+                <td class="numbers">13</td> <!-- Table D -->
+                    <td class="items">Elixer of Health</td>
+                <td class="numbers">13</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">13</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">13</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">13</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">14</td> <!-- Table Trinket-->
+                    <td class="items">An enormous scale, perhaps from a dragon</td>
+                <td class="numbers">14</td> <!-- Table B -->
+                    <td class="items"></td>
+                <td class="numbers">14</td> <!-- Table C -->
+                    <td class="items">Dust of Disapearance</td>
+                <td class="numbers">14</td> <!-- Table D -->
+                    <td class="items"></td>
+                <td class="numbers">14</td> <!-- Table E -->
+                    <td class="items"></td>
+                <td class="numbers">14</td> <!-- Table F -->
+                    <td class="items"></td>
+                <td class="numbers">14</td> <!-- Table G -->
+                    <td class="items"></td>
+                <td class="numbers">14</td> <!-- Table H -->
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">15</td> <!-- Table Trinket-->
+                    <td class="items">A bright green feather</td>
+                <td class="numbers">15</td>
+                    <td class="items"></td>
+                <td class="numbers">15</td>
+                    <td class="items">Dust of Dryness</td>
+                <td class="numbers">15</td>
+                    <td class="items"></td>
+                <td class="numbers">15</td>
+                    <td class="items"></td>
+                <td class="numbers">15</td>
+                    <td class="items"></td>
+                <td class="numbers">15</td>
+                    <td class="items"></td>
+                <td class="numbers">15</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">16</td> <!-- Table Trinket-->
+                    <td class="items">An old divination card bearing your likeness</td>
+                <td class="numbers">16</td>
+                    <td class="items"></td>
+                <td class="numbers">16</td>
+                    <td class="items">Dust of Sneezing & Choking</td>
+                <td class="numbers">16</td>
+                    <td class="items"></td>
+                <td class="numbers">16</td>
+                    <td class="items"></td>
+                <td class="numbers">16</td>
+                    <td class="items"></td>
+                <td class="numbers">16</td>
+                    <td class="items"></td>
+                <td class="numbers">16</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">17</td> <!-- Table Trinket-->
+                    <td class="items">A glass orb filled with moving smoke</td>
+                <td class="numbers">17</td>
+                    <td class="items"></td>
+                <td class="numbers">17</td>
+                    <td class="items">Elemental Gem</td>
+                <td class="numbers">17</td>
+                    <td class="items"></td>
+                <td class="numbers">17</td>
+                    <td class="items"></td>
+                <td class="numbers">17</td>
+                    <td class="items"></td>
+                <td class="numbers">17</td>
+                    <td class="items"></td>
+                <td class="numbers">17</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">18</td> <!-- Table Trinket-->
+                    <td class="items">A 1-pound egg with a bright red shell</td>
+                <td class="numbers">18</td>    
+                    <td class="items"></td>
+                <td class="numbers">18</td>  
+                    <td class="items">Philter of Love</td>
+                <td class="numbers">18</td>
+                    <td class="items"></td>
+                <td class="numbers">18</td>
+                    <td class="items"></td>
+                <td class="numbers">18</td>
+                    <td class="items"></td>
+                <td class="numbers">18</td>
+                    <td class="items"></td>
+                <td class="numbers">18</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">19</td> <!-- Table Trinket-->
+                    <td class="items">A pipe that blows bubbles</td>
+                <td class="numbers">19</td> 
+                    <td class="items"></td>
+                <td class="numbers">19</td> 
+                    <td class="items">Alchemly Jug</td>
+                <td class="numbers">19</td>
+                    <td class="items"></td>
+                <td class="numbers">19</td>
+                    <td class="items"></td>
+                <td class="numbers">19</td>
+                    <td class="items"></td>
+                <td class="numbers">19</td>
+                    <td class="items"></td>
+                <td class="numbers">19</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">20</td> <!-- Table Trinket-->
+                    <td class="items">A glass jar containing a weird bit of flesh floating in pickling fluid</td>
+                <td class="numbers">20</td>
+                    <td class="items"></td>
+                <td class="numbers">20</td>
+                    <td class="items">Cap of Water Breathing</td>
+                <td class="numbers">20</td>
+                    <td class="items"></td>
+                <td class="numbers">20</td>
+                    <td class="items"></td>
+                <td class="numbers">20</td>
+                    <td class="items"></td>
+                <td class="numbers">20</td>
+                    <td class="items"></td>
+                <td class="numbers">20</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">21</td> <!-- Table Trinket-->
+                    <td class="items">	A tiny gnome-crafted music box that plays a song you dimly remember from your childhood</td>
+                <td class="numbers">21</td>
+                    <td class="items"></td>
+                <td class="numbers">21</td>
+                    <td class="items">Cloak of the Manta Ray</td>
+                <td class="numbers">21</td>
+                    <td class="items"></td>
+                <td class="numbers">21</td>
+                    <td class="items"></td>
+                <td class="numbers">21</td>
+                    <td class="items"></td>
+                <td class="numbers">21</td>
+                    <td class="items"></td>
+                <td class="numbers">21</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">22</td> <!-- Table Trinket-->
+                    <td class="items">A small wooden statuette of a smug halfling</td>
+                <td class="numbers">22</td>
+                    <td class="items"></td>
+                <td class="numbers">22</td>
+                    <td class="items">Driftglobe</td>
+                <td class="numbers">22</td>
+                    <td class="items"></td>
+                <td class="numbers">22</td>
+                    <td class="items"></td>
+                <td class="numbers">22</td>
+                    <td class="items"></td>
+                <td class="numbers">22</td>
+                    <td class="items"></td>
+                <td class="numbers">22</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">23</td> <!-- Table Trinket-->
+                    <td class="items">A brass orb etched with strange runes</td>
+                <td class="numbers">23</td>
+                    <td class="items"></td>
+                <td class="numbers">23</td>
+                    <td class="items">Goggles of Night</td>
+                <td class="numbers">23</td>
+                    <td class="items"></td>
+                <td class="numbers">23</td>
+                    <td class="items"></td>
+                <td class="numbers">23</td>
+                    <td class="items"></td>
+                <td class="numbers">23</td>
+                    <td class="items"></td>
+                <td class="numbers">23</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">24</td> <!-- Table Trinket-->
+                    <td class="items">A multicolored stone disk</td>
+                <td class="numbers">24</td>
+                    <td class="items"></td>
+                <td class="numbers">24</td>
+                    <td class="items">Helm of Comprehending Languages</td>
+                <td class="numbers">24</td>
+                    <td class="items"></td>
+                <td class="numbers">24</td>
+                    <td class="items"></td>
+                <td class="numbers">24</td>
+                    <td class="items"></td>
+                <td class="numbers">24</td>
+                    <td class="items"></td>
+                <td class="numbers">24</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">25</td> <!-- Table Trinket-->
+                    <td class="items">A tiny silver icon of a raven</td>
+                <td class="numbers">25</td>
+                    <td class="items"></td>
+                <td class="numbers">25</td>
+                    <td class="items">Immovable Rod</td>
+                <td class="numbers">25</td>
+                    <td class="items"></td>
+                <td class="numbers">25</td>
+                    <td class="items"></td>
+                <td class="numbers">25</td>
+                    <td class="items"></td>
+                <td class="numbers">25</td>
+                    <td class="items"></td>
+                <td class="numbers">25</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">26</td> <!-- Table Trinket-->
+                    <td class="items">A bag containing forty-seven humanoid teeth, one of which is rotten</td>
+                <td class="numbers">26</td>
+                    <td class="items"></td>
+                <td class="numbers">26</td>
+                    <td class="items">Lantern of Revealing</td>
+                <td class="numbers">26</td>
+                    <td class="items"></td>
+                <td class="numbers">26</td>
+                    <td class="items"></td>
+                <td class="numbers">26</td>
+                    <td class="items"></td>
+                <td class="numbers">26</td>
+                    <td class="items"></td>
+                <td class="numbers">26</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">27</td> <!-- Table Trinket-->
+                    <td class="items">A shard of obsidian that always feels warm to the touch</td>
+                <td class="numbers">27</td>
+                    <td class="items"></td>
+                <td class="numbers">27</td>
+                    <td class="items">Mariner's Armor</td>
+                <td class="numbers">27</td>
+                    <td class="items"></td>
+                <td class="numbers">27</td>
+                    <td class="items"></td>
+                <td class="numbers">27</td>
+                    <td class="items"></td>
+                <td class="numbers">27</td>
+                    <td class="items"></td>
+                <td class="numbers">27</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">28</td> <!-- Table Trinket-->
+                    <td class="items">A dragon's bony talon hanging from a plain leather necklace</td>
+                <td class="numbers">28</td>
+                    <td class="items"></td>
+                <td class="numbers">28</td>
+                    <td class="items">Mithral Armor</td>
+                <td class="numbers">28</td>
+                    <td class="items"></td>
+                <td class="numbers">28</td>
+                    <td class="items"></td>
+                <td class="numbers">28</td>
+                    <td class="items"></td>
+                <td class="numbers">28</td>
+                    <td class="items"></td>
+                <td class="numbers">28</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">29</td> <!-- Table Trinket-->
+                    <td class="items">A pair of old socks</td>
+                <td class="numbers">29</td>
+                    <td class="items"></td>
+                <td class="numbers">29</td>
+                    <td class="items">Potion of Poison</td>
+                <td class="numbers">29</td>
+                    <td class="items"></td>
+                <td class="numbers">29</td>
+                    <td class="items"></td>
+                <td class="numbers">29</td>
+                    <td class="items"></td>
+                <td class="numbers">29</td>
+                    <td class="items"></td>
+                <td class="numbers">29</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">30</td> <!-- Table Trinket-->
+                    <td class="items">A blank book whose pages refuse to hold ink, chalk, graphite, or any other substance or marking</td>
+                <td class="numbers">30</td>
+                    <td class="items"></td>
+                <td class="numbers">30</td>
+                    <td class="items">Ring of Swimming</td>
+                <td class="numbers">30</td>
+                    <td class="items"></td>
+                <td class="numbers">30</td>
+                    <td class="items"></td>
+                <td class="numbers">30</td>
+                    <td class="items"></td>
+                <td class="numbers">30</td>
+                    <td class="items"></td>
+                <td class="numbers">30</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">31</td> <!-- Table Trinket-->
+                    <td class="items">A silver badge in the shape of a five-pointed star</td>
+                <td class="numbers">31</td>
+                    <td class="items"></td>
+                <td class="numbers">31</td>
+                    <td class="items">Robe of Useful Items</td>
+                <td class="numbers">31</td>
+                    <td class="items"></td>
+                <td class="numbers">31</td>
+                    <td class="items"></td>
+                <td class="numbers">31</td>
+                    <td class="items"></td>
+                <td class="numbers">31</td>
+                    <td class="items"></td>
+                <td class="numbers">31</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">32</td> <!-- Table Trinket-->
+                    <td class="items">A knife that belonged to a relative</td>
+                <td class="numbers">32</td>
+                    <td class="items"></td>
+                <td class="numbers">32</td>
+                    <td class="items">Rope of Climbing</td>
+                <td class="numbers">32</td>
+                    <td class="items"></td>
+                <td class="numbers">32</td>
+                    <td class="items"></td>
+                <td class="numbers">32</td>
+                    <td class="items"></td>
+                <td class="numbers">32</td>
+                    <td class="items"></td>
+                <td class="numbers">32</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">33</td> <!-- Table Trinket-->
+                    <td class="items">A glass vial filled with nail clippings</td>
+                <td class="numbers">33</td>
+                    <td class="items"></td>
+                <td class="numbers">33</td>
+                    <td class="items">Saddle of the Cavalier</td>
+                <td class="numbers">33</td>
+                    <td class="items"></td>
+                <td class="numbers">33</td>
+                    <td class="items"></td>
+                <td class="numbers">33</td>
+                    <td class="items"></td>
+                <td class="numbers">33</td>
+                    <td class="items"></td>
+                <td class="numbers">33</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">34</td> <!-- Table Trinket-->
+                    <td class="items">A rectangular metal device with two tiny metal cups on one end that throws sparks when wet</td>
+                <td class="numbers">34</td>
+                    <td class="items"></td>
+                <td class="numbers">34</td>
+                    <td class="items">Wand of Magic Detection</td>
+                <td class="numbers">34</td>
+                    <td class="items"></td>
+                <td class="numbers">34</td>
+                    <td class="items"></td>
+                <td class="numbers">34</td>
+                    <td class="items"></td>
+                <td class="numbers">34</td>
+                    <td class="items"></td>
+                <td class="numbers">34</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">35</td> <!-- Table Trinket-->
+                    <td class="items">A white, sequined glove sized for a human</td>
+                <td class="numbers">35</td>
+                    <td class="items"></td>
+                <td class="numbers">35</td>
+                    <td class="items">Wand of Secrets</td>
+                <td class="numbers">35</td>
+                    <td class="items"></td>
+                <td class="numbers">35</td>
+                    <td class="items"></td>
+                <td class="numbers">35</td>
+                    <td class="items"></td>
+                <td class="numbers">35</td>
+                    <td class="items"></td>
+                <td class="numbers">35</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">36</td> <!-- Table Trinket-->
+                    <td class="items">A vest with one hundred tiny pockets</td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+                <td class="numbers">36</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">37</td> <!-- Table Trinket-->
+                    <td class="items">A small, weightless stone block</td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+                <td class="numbers">37</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">38</td> <!-- Table Trinket-->
+                    <td class="items">A tiny sketch portrait of a goblin</td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+                <td class="numbers">38</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">39</td> <!-- Table Trinket-->
+                    <td class="items">An empty glass vial that smells of perfume when opened</td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+                <td class="numbers">39</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">40</td> <!-- Table Trinket-->
+                    <td class="items">A gemstone that looks like a lump of coal when examined by anyone but you</td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+                <td class="numbers">40</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">41</td> <!-- Table Trinket-->
+                    <td class="items">A scrap of cloth from an old banner</td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+                <td class="numbers">41</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">42</td> <!-- Table Trinket-->
+                    <td class="items">A rank insignia from a lost legionnaire</td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+                <td class="numbers">42</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">43</td> <!-- Table Trinket-->
+                    <td class="items">A tiny silver bell without a clapper</td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+                <td class="numbers">43</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">44</td> <!-- Table Trinket-->
+                    <td class="items">A mechanical canary inside a gnomish lamp</td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+                <td class="numbers">44</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">45</td> <!-- Table Trinket-->
+                    <td class="items">A tiny chest carved to look like it has numerous feet on the bottom</td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+                <td class="numbers">45</td>
+                    <td class="items"></td>
+            </tr>
+            <tr>
+                <td class="numbers">46</td> <!-- Table Trinket-->
+                    <td class="items">A dead sprite inside a clear glass bottle</td>
+            </tr>
+            <tr>
+                <td class="numbers">47</td> <!-- Table Trinket-->
+                    <td class="items">A metal can that has no opening but sounds as if it is filled with liquid, sand, spiders, or broken glass (your choice)</td> 
+            </tr>
+            <tr>
+                <td class="numbers">48</td> <!-- Table Trinket-->
+                    <td class="items">A glass orb filled with water, in which swims a clockwork goldfish</td> 
+            </tr>
+            <tr>
+                <td class="numbers">49</td> <!-- Table Trinket-->
+                    <td class="items">A silver spoon with an 'M' engraved on the handle</td>  
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
