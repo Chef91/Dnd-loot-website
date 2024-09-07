@@ -18,3 +18,9 @@ project i could share with others. There are some options for pre-planning and m
 to come across one that i liked, which lead me to make my own. As this "loot" website grows, we will most likely
 be adding more features than just loot.
 <br>
+If you like my table and find it very useful, Donations through my patreon are very much appreciated:
+<a href="">My Patreon</a>
+
+You can also find the website fully operational at:
+<a href=""></a>
+So you don't even have to download the repo if you are just looking to check out the system itself, and not so much the codes.
