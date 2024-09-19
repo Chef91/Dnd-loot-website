@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- work on SEO Optimization -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dungeons & Dragons - Loot Table | Random Table Generator</title>
+  <link href="/dashboard-style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Tiny5' rel='stylesheet'>
+  <script src="/testing.js"></script>
+</head>
+<body>
+  <div id="head-banner">
+    <h1>D&D LOOT TABLE DASHBOARD</h1>
+  </div>
+  <nav>
+    <ul>
+      <li>FEATURE</li>
+    </ul>
+  </nav>
+  <div id="top-columns">
+    <!-- left Column (info)
+     Currency Roll table -->
+    <div id="currency-drop">
+      <div id="currency-header">
+      <h1>CURRENCY (LOOT DROP)</h1>
+      <p>Roll for currency!</p>
+      </div>
+        <div id="currency-container">
+          <!-- left side - buttons -->
+          <div id="currency-buttons">
+            <button id="platinum" onclick="document.getElementById('Platinum').innerHTML = getRndInteger(0,8)">Platinum</button>
+            <button id="gold" onclick="document.getElementById('Gold').innerHTML = getRndInteger(0,20)">Gold</button>
+            <button id="silver" onclick="document.getElementById('Silver').innerHTML = getRndInteger(0,80)">Silver</button>
+            <button id="copper" onclick="document.getElementById('Copper').innerHTML = getRndInteger(0,200)">Copper</button>
+          </div>
+          <!-- middle row - results -->
+          <div id="results-div">
+            <div class="currency-results">
+              <p id="Platinum"></p>
+            </div>
+            <div class="currency-results">
+              <p id="Gold"></p>
+            </div>
+            <div class="currency-results">
+              <p id="Silver"></p>
+            </div>
+            <div>
+              <p id="Copper"></p>
+            </div>
+          </div>
+          <!-- selection tools -->
+          <div id="currency-selectors">
+            <form action="/action_page.php"> <!-- NO PHP YET -->
+              <label for="levels">Choose player level:</label>
+                <select id="levels" name="levels">
+                  <option value="1">1</option>
+                  <option value="3">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                </select><br><br>
+              <label for="encounter_type">Encounter Type:</label> 
+                <select>
+                  <option value="local_npc">Local NPCs</option>
+                  <option value="guards">Guards</option>
+                  <option value="merchant">Merchants</option>
+                  <option value="caravan">Caravan</option>
+                  <option value="monsters">Monsters</option>
+                </select><br><br>
+              <label for="random_item">Random Item?</label><br>
+                  <input type="checkbox" id="check-yes" name="check-yes" value="yes">
+                  <label for="check-yes">Yes</label>
+                  <input type="checkbox" id="check-no" name="check-no" value="no">
+                  <label for="check-yes">No</label><br>
+                  <br>
+                <input type="submit">
+              </form>
+          </div>
+        </div>
+    </div>
+    <!-- -->
+  </div>
+    <div>hello</div>
+    <div>hello</div>
+  </div>
+</body>
+</html>

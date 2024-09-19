@@ -1,0 +1,164 @@
+*  {
+  background-color: rgb(31, 31, 31);
+  color: white;
+  font-family: serif;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+/* top div - banner area */
+#head-banner  {
+  padding: 5px;
+  margin: 0;
+  border: 2px solid rgba(163, 163, 163, 0.658);
+}
+#head-banner > h1 {
+  color: rgb(255, 255, 255);
+  font-family: Tiny5;
+  font-size: 50px;
+  text-align: center;
+}
+nav   {
+  position: relative;
+  top: 0;
+  background-color: #333;
+  padding: 0px;
+  margin: 0px;
+  border-bottom: 2px solid #ffffff6c;
+  z-index: 2;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+nav li {
+  float: left;
+	border-right: 1px solid #ffffff6c;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+/* This will be the top 3 columns
+   They will be the top dash */
+#top-columns  {
+  display: grid;
+  grid-template-columns: 420px 300px 300px;
+  gap: 0px;
+}
+/* Currency Rolls */
+#currency-drop  {
+  padding: 0;
+  margin: 10px 0px 0px 5px;
+  border: 3px solid rgba(163, 163, 163, 0.658);
+  border-radius: 8px;
+  background-image: linear-gradient(rgb(255, 255, 255) 5%,rgb(119, 119, 119),rgb(66, 66, 66));
+}
+#currency-header  {
+  background-color:rgb(0, 0, 0);
+}
+#currency-header > h1  {
+  text-align: center;
+  font-family: tiny5;
+  text-shadow: 2px 5px 5px rgba(165, 0, 0, 0.884);
+  background-color:rgba(59, 59, 59, 0.849);
+}
+#currency-header > p  {
+  text-align: center;
+  border-bottom: 1px solid rgba(163, 163, 163, 0.658);
+  background-color:rgba(59, 59, 59, 0.849);
+  padding-bottom: 5px;
+  font-size: 20px;
+}
+#currency-container  {
+  display: grid;
+  grid-template-columns: 120px 70px 170px;
+  gap: 5px;
+  padding: 2px;
+  margin: 10px;
+  border: 5px inset rgba(87, 87, 87, 0.726);
+  border-radius: 10px;
+  background-image: linear-gradient(rgb(255, 255, 255) 5%,rgb(119, 119, 119),rgb(66, 66, 66));
+}
+/* left-div */
+#currency-buttons  {
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  padding: 10px 0px 0px;
+  background-color: rgba(83, 0, 0, 0.795);
+}
+#currency-buttons > button:hover  {
+  background-color: rgb(29, 22, 22);
+}
+/* buttons */
+#platinum  {
+  margin:0px 10px 10px 10px;
+  padding: 8px 20px 8px 20px;
+  border: 1px solid rgba(163, 163, 163, 0.658);
+  border-radius: 20px;
+}
+/* buttons */
+#gold  {
+  margin:0px 10px 10px 10px;
+  padding: 8px 30px 8px 30px;
+  border: 1px solid rgba(163, 163, 163, 0.658);
+  border-radius: 20px;
+}
+/* buttons */
+#silver  {
+  margin:0px 10px 10px 10px;
+  padding: 8px 27px 8px 27px;
+  border: 1px solid rgba(163, 163, 163, 0.658);
+  border-radius: 20px;
+}
+/* buttons */
+#copper  {
+  margin:0px 10px 10px 10px;
+  padding: 8px 24px 8px 24px;
+  border: 1px solid rgba(163, 163, 163, 0.658);
+  border-radius: 20px;
+}
+/* middle container */
+#results-div  {
+  display: grid;
+  grid-template-rows: 50px 50px 50px 50px;
+  gap: 0px;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  border: 1px solid rgb(224, 224, 224);
+}
+.currency-results  {
+  border-bottom: 2px solid rgb(119, 119, 119);
+}
+/* paragraph element */
+#Platinum  {
+  font-family: tiny5;
+  font-size: 38px;
+  text-align: center;
+}
+/* paragraph element */
+#Gold  {
+  font-family: tiny5;
+  font-size: 38px;
+  text-align: center;
+}
+/* paragraph element */
+#Silver  {
+  font-family: tiny5;
+  font-size: 38px;
+  text-align: center;
+}
+/* paragraph element */
+#Copper {
+  font-family: tiny5;
+  font-size: 38px;
+  text-align: center;
+}
+#currency-selectors{
+  padding: 8px;
+}
