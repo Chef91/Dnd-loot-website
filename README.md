@@ -1,27 +1,25 @@
 # Welcome to my Project!
 
-Thank you for taking the time to look at my project. I have created a web-based loot system for
-the Dungeons & Dragons 5e Platform. This loot system is designed so that you can quickly and efficiently
-hand out coin & other various rewards on a random roll table without needing to do things like:
-<br>
-<ul>
-  <li>Plan ahead for reward handouts.</li>
-  <li>Dig through your books(or have a hundred sticky notes).</li>
-  <li>Rolling + Math which does take up valuable time.</li>
-  <li>(if you plan ahead) Roll ahead of time quicky with out system.</li>
-</ul>
-<br>
-This has been a very fun first JavaScript project for me so far, and i'm very excited to see where this
-project goes. It started out as something i needed to speed up my pre-campaign work as a paid dungeon master.
-This quickly turned into me realizing that it could be not only a useful tool for me, but also a really cool
-project i could share with others. There are some options for pre-planning and measuring out things but i've yet
-to come across one that i liked, which lead me to make my own. As this "loot" website grows, we will most likely
-be adding more features than just loot.
-<br>
-<br>
-If you like my table and find it very useful, Donations through my patreon are very much appreciated:<br>
-<a href="">My Patreon</a>
-<br>
-You can also find the website fully operational at:
-<a href=""></a>
-So you don't even have to download the repo if you are just looking to check out the system itself, and not so much the codes.
+You probably like Dungeons & Dragons if you're looking at this Repository. I do to, and that's why I created this website that will help <strong>You</strong> the dungeon master speed up some of the processes in running a game virtually. I sadly have little in-person tabletop experience, but I have plenty of online experience which led to me creating this website. I got tired of trying to grab my rollem bot or roll inside of roll20 when doing small tasks like handing out loot.
+<br><br>
+I created this website to be a dashboard for the Dungeon Master. Almost like a DM screen. How do I use this setup you ask? Well, the answer is pretty simple. I run Roll20, World Anvil, Discord, and this website when running my D&D campaigns. This is a lot and requires multiple screens. Most dungeon masters need them anyway, lol. I highly suggest you keep it up as a tab or a saved page you can keep returning to in the quick moments of needing it.
+
+## Use of repo
+
+
+## How to use this project
+This area will cover how to use this project. I'm all for others learning about this site I have built, and expect that some will want to download it or contribute to its success. Because of this, I have decided to create a section that is dedicated to explaining how to use this project. This will help you understand how the dashboard works.
+
+### Features:
++ **Random Currency Generator**
+<br><br>
+    The buttons on the left side trigger a JavaScript function. This function is set to roll a random number that will appear in the middlebox.
+  
+
+## Dashboard features
++ **Random Currency Generator**<br><br>
+    Roll for Currency!<br>
+    This section of the dashboard was created to be a currency roll generator. Instead of guessing or rolling dice to decide what to hand out, you can click each button (platinum, gold, electrum, silver, copper) to get your party's currency loot. This speeds up the process and is a great tool when you need to come up with a loot drop on the fly.
+  
+## Credits
++ <a href="" title="Wes' Github">Wesley Graham (Project Owner)</a>
