@@ -1,0 +1,29 @@
+{
+  "name": "dnd-loot-website",
+  "version": "1.0.0",
+  "description": "dnd tools",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss:assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chef91/Dnd-loot-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chef91/Dnd-loot-website/issues"
+  },
+  "homepage": "https://github.com/Chef91/Dnd-loot-website#readme",
+  "devDependencies": {
+    "sass": "^1.97.3"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.2.0",
+    "autoprefixer": "^10.4.24",
+    "bootstrap": "^5.3.8",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  }
+}
