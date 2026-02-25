@@ -12,14 +12,29 @@ $gray-900: #212529;
 $black:    #000;
 
 // My Theme Colors (use these to override default)
+// Grays
 $smoky-gray: #1c1c1c;
+
+// Reds
+$dark-red: #290000;
+$med-red: #3D0000;
+$blood-red: #520000;
+$lt-red: #6f0000;
+$bright-red: #a50000;
+$active-red: #e62020;
 
 // Customized Bootstrap
 // Default Theme Colors (change these as needed)
 $primary: $smoky-gray;
-$secondary: $smoky-gray;
 
 // Navbar
+$navbar-light-color: $bright-red;
+$navbar-light-hover-color: $smoky-gray;
+$navbar-light-active-color: $active-red;
+$navbar-light-disabled-color: $dark-red;
+$navbar-light-brand-color: $white;
+$navbar-light-brand-hover-color: $white;
 
+// My Fonts
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

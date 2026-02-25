@@ -1,1 +1,7 @@
 @use './custom';
+
+// All Pages - SCSS
+@use './all_pages/nav';
+@use './all_pages/foot';
+
+// Index Page - SCSS
