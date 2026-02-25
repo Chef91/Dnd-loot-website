@@ -1,5 +1,9 @@
-@use '../custom';
+@use '../custom' as *;
 
+.custom-nav  {
+  box-shadow: rgb(17, 17, 17) 0px 20px 30px -10px;
+  border-bottom: 1px solid $black;
+}
 .site-nav  {
   font-family: MedievalSharp, cursive;
   font-size: 1.4rem;

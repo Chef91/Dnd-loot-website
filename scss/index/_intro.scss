@@ -1,0 +1,31 @@
+@use '../custom' as *;
+
+.intro  {
+  background-color: $gray-300;
+  border-left: 2px solid $black;
+  border-right: 2px solid $black;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  h1  {
+    color: $med-red;
+    padding: 2rem 0 0 0;
+    text-align: center;
+    text-shadow: 2px 2px 3px $gray-700;
+  }
+  h2  {
+    text-align: center;
+  }
+  &__p1  {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    border-bottom: 1px solid $gray-800;
+  }
+  &__p2  {
+    padding: 0 2rem 0 2rem;
+    font-size: 1rem;
+  }
+  &__left  {
+    padding: 0.5rem 3rem 0 3rem;
+  }
+}

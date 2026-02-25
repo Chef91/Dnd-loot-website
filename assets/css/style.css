@@ -11859,9 +11859,90 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.custom-nav {
+  box-shadow: rgb(17, 17, 17) 0px 20px 30px -10px;
+  border-bottom: 1px solid #000;
+}
+
 .site-nav {
   font-family: MedievalSharp, cursive;
   font-size: 1.4rem;
+}
+
+.hero {
+  min-height: 40vh;
+  background: url("/Images/homepage/hero-img.webp") center/cover no-repeat;
+  position: relative;
+  border-bottom: 1px solid #000;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.33);
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.intro {
+  background-color: #dee2e6;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.intro h1 {
+  color: #3D0000;
+  padding: 2rem 0 0 0;
+  text-align: center;
+  text-shadow: 2px 2px 3px #495057;
+}
+.intro h2 {
+  text-align: center;
+}
+.intro__p1 {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 200;
+  text-align: center;
+  border-bottom: 1px solid #343a40;
+}
+.intro__p2 {
+  padding: 0 2rem 0 2rem;
+  font-size: 1rem;
+}
+.intro__left {
+  padding: 0.5rem 3rem 0 3rem;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("/Images/navbar/background.webp");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 2100px auto;
+  z-index: -2;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(17, 17, 17, 0) 10%, rgba(17, 17, 17, 0) 55%, rgba(17, 17, 17, 0.6) 75%, #111 100%);
+  z-index: -1;
+}
+
+h1, h2 {
+  font-family: MedievalSharp, cursive;
+}
+
+p {
+  font-family: "Vollkorn", serif;
 }
 
 /*# sourceMappingURL=style.css.map */
