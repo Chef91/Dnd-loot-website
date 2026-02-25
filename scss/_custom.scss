@@ -14,9 +14,12 @@ $black:    #000;
 // My Theme Colors (use these to override default)
 $smoky-gray: #1c1c1c;
 
-
+// Customized Bootstrap
 // Default Theme Colors (change these as needed)
 $primary: $smoky-gray;
 $secondary: $smoky-gray;
+
+// Navbar
+
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';

@@ -1,5 +1,6 @@
 
-
+# Testing Folder
+testing/
 
 action_page.php
 
@@ -7,8 +8,13 @@ dashboard-style.css
 
 dashboard.html
 
-testing/
-
 testing.js
 
 index2.html
+
+dashboard-style.css
+
+# packages
+package-lock.json
+
+package.json
