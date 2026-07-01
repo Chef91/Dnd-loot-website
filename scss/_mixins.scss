@@ -1,0 +1,10 @@
+@use './custom' as *;
+
+@mixin parchment-gradient {
+  background: linear-gradient(
+    0deg,
+    rgba($white, 0.96) 0%,
+    rgba(#f5efe1, 0.94) 55%,
+    rgba(#e9dfc7, 0.92) 100%
+  );
+}
