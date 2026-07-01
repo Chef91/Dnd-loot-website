@@ -13,7 +13,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("/Images/navbar/background.webp");
+  background-image: url("/images/navbar/background.webp");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 2100px auto;
@@ -32,7 +32,7 @@ body::after {
   );
   z-index: -1;
 }
-h1, h2  {
+h1, h2, h3  {
   font-family: MedievalSharp, cursive;
 }
 p  {

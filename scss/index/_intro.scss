@@ -75,6 +75,22 @@
         rgba(0, 0, 0, 0.09) 0px 8px 4px,
         rgba(0, 0, 0, 0.09) 0px 16px 8px,
         rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      img  {
+        height: 22rem;
+        width: 14rem;
+        margin: 2rem 0 0 0;
+      }
+      h3  {
+        margin: 1.5rem 0 0 0;
+        font-size: 4rem;
+        color: $bright-red;
+        background-color: $gray-300;
+        border: 0.3rem solid $dark-red;
+        border-radius: 2rem;
+      }
+      p  {
+        margin: 0 2rem 0 2rem;
+      }
     }
   }
   &__right  {

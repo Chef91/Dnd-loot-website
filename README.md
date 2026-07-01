@@ -4,6 +4,9 @@ You probably like Dungeons & Dragons if you're looking at this Repository. I do 
 <br><br>
 I created this website to be a dashboard for the Dungeon Master. Almost like a DM screen. How do I use this setup you ask? Well, the answer is pretty simple. I run Roll20, World Anvil, Discord, and this website when running my D&D campaigns. This is a lot and requires multiple screens. Most dungeon masters need them anyway, lol. I highly suggest you keep it up as a tab or a saved page you can keep returning to in the quick moments of needing it.
 
+## Screenshots:
+<img src="/images/screenshot.webp">
+
 ## Use of repo
 
 

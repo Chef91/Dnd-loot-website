@@ -11874,7 +11874,7 @@ textarea.form-control-lg {
 
 .hero {
   min-height: 40vh;
-  background: url("/Images/homepage/hero-img.webp") center/cover no-repeat;
+  background: url("/images/homepage/hero-img.webp") center/cover no-repeat;
   position: relative;
   border-bottom: 1px solid #000;
 }
@@ -11945,6 +11945,22 @@ textarea.form-control-lg {
   min-height: 20rem;
   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
+.intro__left .js-div img {
+  height: 22rem;
+  width: 14rem;
+  margin: 2rem 0 0 0;
+}
+.intro__left .js-div h3 {
+  margin: 1.5rem 0 0 0;
+  font-size: 4rem;
+  color: #a50000;
+  background-color: #dee2e6;
+  border: 0.3rem solid #290000;
+  border-radius: 2rem;
+}
+.intro__left .js-div p {
+  margin: 0 2rem 0 2rem;
+}
 .intro__right {
   margin: 4rem 0 0 0;
 }
@@ -11957,7 +11973,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("/Images/navbar/background.webp");
+  background-image: url("/images/navbar/background.webp");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 2100px auto;
@@ -11972,7 +11988,7 @@ body::after {
   z-index: -1;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: MedievalSharp, cursive;
 }
 
