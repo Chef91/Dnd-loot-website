@@ -11900,6 +11900,7 @@ textarea.form-control-lg {
 .intro h1 {
   color: #3D0000;
   padding: 2rem 0 0 0;
+  font-size: 4rem;
   text-align: center;
   text-shadow: 2px 2px 3px #495057;
 }
@@ -11969,6 +11970,21 @@ textarea.form-control-lg {
   height: 25rem;
 }
 
+.tools {
+  background-color: #dee2e6;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+}
+.tools .row {
+  border-top: 1px solid #343a40;
+}
+.tools .row h3 {
+  font-size: 2.5rem;
+}
+.tools .row h4 {
+  font-size: 1.5rem;
+}
+
 body::before {
   content: "";
   position: fixed;
@@ -11988,7 +12004,7 @@ body::after {
   z-index: -1;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: MedievalSharp, cursive;
 }
 

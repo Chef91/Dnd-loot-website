@@ -7,6 +7,7 @@
 //index content scss files
 @use '../scss/index/hero';
 @use '../scss/index/intro';
+@use '../scss/index/tools';
 
 //Background Codes
 body::before {
@@ -32,7 +33,7 @@ body::after {
   );
   z-index: -1;
 }
-h1, h2, h3  {
+h1, h2, h3, h4  {
   font-family: MedievalSharp, cursive;
 }
 p  {

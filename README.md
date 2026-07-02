@@ -19,16 +19,25 @@ This area will cover the details of this project and what is being used to help 
 ### Collabs & Contributions:
 I'm currently not accepting any new collabs or contributions to this project. The reason is that it's a small scale project and really doesn't require multiple developers assisting the growth of it. Down the road though, I would love to have others contributing and making this project better. That unfortunately will take time and will definitely be a later down the road addition to this repo. For now, if you want to play with the repo, you are welcome to take it and go build what you want with it out on your own. Just remember <b>USE OF REPO</b> and remember to show me what you came up with.
 
-### Features:
-+ **Random Currency Generator**
-<br><br>
-    The buttons on the left side trigger a JavaScript function. This function is set to roll a random number that will appear in the middlebox.
-  
+### Project Team:
+<ul>
+    <li><a href="https://github.com/Chef91" title="DM Chef Github">DM Chef (Founder/Lead Programmer)</a></li>
+</ul>
 
-## Dashboard features
-+ **Random Currency Generator**<br><br>
-    Roll for Currency!<br>
-    This section of the dashboard was created to be a currency roll generator. Instead of guessing or rolling dice to decide what to hand out, you can click each button (platinum, gold, electrum, silver, copper) to get your party's currency loot. This speeds up the process and is a great tool when you need to come up with a loot drop on the fly.
-  
-## Credits
-+ <a href="" title="Wes' Github">Wesley Graham (Project Owner)</a>
+### Languages:
+<ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JAVASCRIPT</li>
+    <li>BOOTSTRAP 5</li>
+    <li>SASS</li>
+</ul>
+
+### NPM Packages:
+<ul>
+    <li>Fontawesome-free (Version 7.2)</li>
+    <li>Autoprefixer (Version 10.4)</li>
+    <li>Bootstrap (Version 5.3)</li>
+    <li>Postcss (Version 8.5)</li>
+    <li>Postcss-cli (Version 11.0)</li>
+</ul>
